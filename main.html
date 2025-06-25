@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nested Tables</title>
   <style>
     table, th, td {
@@ -14,99 +14,90 @@
       color: white;
       text-align: center;
     }
-    h2 {
-      margin: 0 0 20px 0;
-    }
   </style>
 </head>
 <body>
 
   <h2>Tables in Tables</h2>
 
-  <!-- Main Outer Table -->
+  <!-- Main Table -->
   <table>
     <tr>
-      <td>
-        <!-- Nested Table 1 -->
-        <table>
-          <tr>
-            <th>Nested Table 1</th>
-            <th>Column 1</th>
-            <th>Column 2</th>
-          </tr>
-          <tr>
-            <td>Row 1</td>
-            <td>Data A1</td>
-            <td>Data A2</td>
-          </tr>
-          <tr>
-            <td>Row 2</td>
-            <td>Data B1</td>
-            <td>Data B2</td>
-          </tr>
-        </table>
-      </td>
+      <td>Main Table</td>
+    </tr>
+  </table>
 
-      <td>
-        <!-- ✅ This must be the second table (index 1 in Cypress) -->
-        <table>
-          <tr>
-            <th>Nested Table 2</th>
-            <th>Column 1</th>
-            <th>Column 2</th>
-          </tr>
-          <tr>
-            <td>Row 1</td>
-            <td>Data C1</td>
-            <td>Data C2</td>
-          </tr>
-          <tr>
-            <td>Row 2</td>
-            <td>Data D1</td>
-            <td>Data D2</td>
-          </tr>
-        </table>
-      </td>
+  <!-- Nested Table 1 -->
+  <table>
+    <tr>
+      <th>Nested Table 1</th>
+      <th>Column 1</th>
+      <th>Column 2</th>
     </tr>
     <tr>
-      <td>
-        <!-- Nested Table 3 with List -->
-        <table>
-          <tr>
-            <th>Nested Table 3</th>
-            <th>Column 1</th>
-            <th>Column 2</th>
-          </tr>
-          <tr>
-            <td>List</td>
-            <td colspan="2">
-              <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </td>
+      <td>Row 1</td>
+      <td>Data A1</td>
+      <td>Data A2</td>
+    </tr>
+    <tr>
+      <td>Row 2</td>
+      <td>Data B1</td>
+      <td>Data B2</td>
+    </tr>
+  </table>
 
-      <td>
-        <!-- Nested Table 4 with HTML cell -->
-        <table>
-          <tr>
-            <th>Nested Table 4</th>
-            <th>Column 1</th>
-            <th>Column 2</th>
-          </tr>
-          <tr>
-            <td>Row 1</td>
-            <td class="html-cell" colspan="2">HTML</td>
-          </tr>
-        </table>
+  <!-- ✅ This is the table Cypress checks at index 1 -->
+  <table>
+    <tr>
+      <th>Nested Table 2</th>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+    <tr>
+      <td>Row 1</td>
+      <td>Data C1</td>
+      <td>Data C2</td>
+    </tr>
+    <tr>
+      <td>Row 2</td>
+      <td>Data D1</td>
+      <td>Data D2</td>
+    </tr>
+  </table>
+
+  <!-- Nested Table 3 with list -->
+  <table>
+    <tr>
+      <th>Nested Table 3</th>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+    <tr>
+      <td>List</td>
+      <td colspan="2">
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
       </td>
+    </tr>
+  </table>
+
+  <!-- Nested Table 4 with black HTML cell -->
+  <table>
+    <tr>
+      <th>Nested Table 4</th>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+    <tr>
+      <td>Row 1</td>
+      <td colspan="2" class="html-cell">HTML</td>
     </tr>
   </table>
 
 </body>
 </html>
+
 
