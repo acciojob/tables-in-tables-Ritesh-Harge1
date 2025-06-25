@@ -9,15 +9,13 @@
       border-collapse: collapse;
       padding: 8px;
     }
-
     .html-cell {
       background-color: black;
       color: white;
       text-align: center;
     }
-
     h2 {
-      margin: 0;
+      margin: 0 0 20px 0;
     }
   </style>
 </head>
@@ -25,11 +23,11 @@
 
   <h2>Tables in Tables</h2>
 
-  <!-- Outer Main Table -->
+  <!-- Main Outer Table -->
   <table>
     <tr>
-      <!-- Nested Table 1 -->
       <td>
+        <!-- Nested Table 1 -->
         <table>
           <tr>
             <th>Nested Table 1</th>
@@ -49,8 +47,8 @@
         </table>
       </td>
 
-      <!-- Nested Table 2 -->
       <td>
+        <!-- ✅ This must be the second table (index 1 in Cypress) -->
         <table>
           <tr>
             <th>Nested Table 2</th>
@@ -70,10 +68,9 @@
         </table>
       </td>
     </tr>
-
     <tr>
-      <!-- Nested Table 3 with list -->
       <td>
+        <!-- Nested Table 3 with List -->
         <table>
           <tr>
             <th>Nested Table 3</th>
@@ -93,8 +90,8 @@
         </table>
       </td>
 
-      <!-- Nested Table 4 with black cell -->
       <td>
+        <!-- Nested Table 4 with HTML cell -->
         <table>
           <tr>
             <th>Nested Table 4</th>
